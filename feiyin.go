@@ -33,6 +33,7 @@ type AccessToken struct {
 
 type Device struct {
 	DeviceNo        string `json:"device_no"`         //设备编码
+	Model           string `json:"model"`             //设备型号
 	Since           string `json:"since"`             //打印机激活时间
 	Status          string `json:"status"`            //打印机的连接状态，包括：online 在线 offline 离线 overheat 打印头过热 error 打印机系统故障
 	PaperStatus     string `json:"paper_status"`      //打印纸张的状态，包括：nomal 正常 lack 缺纸
