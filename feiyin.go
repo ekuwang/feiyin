@@ -58,11 +58,16 @@ type ClearResponse struct {
 }
 
 type Template struct {
+	ID        string `json:"id"`         //模板ID
 	Name      string `json:"name"`       //模板名称
 	Content   string `json:"content"`    //模板内容
 	Catalog   string `json:"catalog"`    //模板归类
 	Desc      string `json:"desc"`       //模板说明
-	UpdatedAt string `json:"updated_at"` //模板最后更新时间
+	Sample    string `json:"sample"`     //模板示例
+	Owner     string `json:"owner"`      //模板创建者ID
+	Status    int    `json:"status"`     //模板状态
+	CreatedAt string `json:"createdAt"`  //模板创建时间
+	UpdatedAt string `json:"updatedAt"`  //模板最后更新时间
 }
 
 type TemplateAddResponse struct {
